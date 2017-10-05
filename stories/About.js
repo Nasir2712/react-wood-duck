@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { storiesOf } from '@storybook/react';
+
 const About = () => (
   <main className="styleguide-content">
     <div className="container-fluid">
@@ -54,4 +56,4 @@ const About = () => (
   </main>
 );
 
-export default About;
+storiesOf('CWDS Asset Library', module).add('About', About);

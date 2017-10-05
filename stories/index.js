@@ -41,15 +41,6 @@ const inputPhone = (
 );
 const clearfix = <div className="clearfix" />;
 
-storiesOf('CWDS Asset Library', module)
-  .add('About', About);
-
-storiesOf('CWDS Asset Library', module)
-  .add('Accessibility', Accessibility);
-
-storiesOf('Styles', module)
-  .add('Colors', Colors);
-
 storiesOf('Alert', module)
   .add('Alert Info', () => (
     <Alert
