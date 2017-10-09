@@ -133,16 +133,15 @@ inside ./stories/components - NewStory.js and then write your story like this:
 	import NewComponent from '../../src/NewComponent';
 	const CenterDecorator = (storyFn) => (
 		<div className='container'>
-			{	storyFn() }
+			{storyFn()}
 		</div>
-		);
+	);
 	const newComponent = withInfo(
 		`
-			#### Title
-				some info
-
-			#### Usage
-				some info on usage
+		#### Title
+			some info
+		#### Usage
+			some info on usage
 		`
 	)(() => (
 		<NewComponent name="hello world"/>
@@ -158,10 +157,10 @@ show some documentation on your components. It shows the component's code and pr
 
 After writing your story, import your story at index.js
 
-		import NewComponent from './components/NewComponent';
+	import NewComponent from './components/NewComponent';
 
 Run your storybook with:
-
-		yarn run storybook
+	
+	yarn run storybook
 
 View your storybook browser http://localhost:6006/
