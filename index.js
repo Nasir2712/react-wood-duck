@@ -13,6 +13,7 @@ var ReactDatePicker = require('./dist/ReactDatePicker.js').default;
 var MultiSelect = require('./dist/MultiSelect.js').default;
 var GlobalHeader = require('./dist/GlobalHeader.js').default;
 var PageHeader = require('./dist/PageHeader.js').default;
+var SideNav = require('./dist/SideNav.js').default;
 var Layout01 = require('./dist/Layout01.js').default;
 
 module.exports = {
@@ -31,5 +32,6 @@ module.exports = {
 	MultiSelect,
 	GlobalHeader,
 	PageHeader,
+	SideNav,
 	Layout01
 };

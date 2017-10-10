@@ -29,6 +29,7 @@ The react-wood-duck is a shared pattern library hosting re-usable components and
 *	InputComponent
 *	AddAdditionalItem
 *	Select/Multiselect
+*       SideNav
 *	TextArea
 *	Table
 *   PageHeader
