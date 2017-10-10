@@ -23,6 +23,10 @@ const alert = withInfo(
     about a card to a user.The error alert should be 
     used to point out a card level issue that would 
     violate a business rule.
+
+    ##### Accessibility
+
+    The error alert should have the appropriate role="alert" attribute.
   `
 )(() => (
   <div>
@@ -40,6 +44,6 @@ const alert = withInfo(
   </div>
 ));
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('Alert', alert);

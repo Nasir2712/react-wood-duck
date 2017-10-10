@@ -81,6 +81,14 @@ const CheckboxRadioGroupStory = withInfo(
       - Use with a default selection whenever possible.
     
       - Do not use if there are more than 7 options.    
+
+      #### Accessibility
+
+      - Group related radio buttons together with <fieldset> and describe the group with <legend>.
+
+      - Each radio button should have a <label>. Associate the two by matching the<label>’s for attribute to the <input> ’s id attribute.
+      
+      - The title attribute can replace <label>.
   `
 )(() => (
   <div>
@@ -103,6 +111,6 @@ const CheckboxRadioGroupStory = withInfo(
   </div>
 ));
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('CheckboxRadioGroup', CheckboxRadioGroupStory);

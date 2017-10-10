@@ -77,4 +77,4 @@ const CardsStory = withInfo(
   />
 ));
 
-storiesOf('Components', module).add('Cards', CardsStory);
+storiesOf('Prototypes', module).add('Cards', CardsStory);

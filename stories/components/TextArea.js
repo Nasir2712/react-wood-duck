@@ -22,6 +22,6 @@ const TextAreaStory = () => (
   />
 )
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('TextArea', TextAreaStory);

@@ -64,13 +64,16 @@ const ButtonStory = withInfo(
 
     ##### Accessibility
 
-      Buttons should display a visible focus state when users tab to them.
-      Avoid using <div> or <img> tags to create buttons. Screen readers 
-      don't automatically know either is a usable button.ÎWhen styling 
-      links to look like buttons, remember that scrreen readers handle 
+      - Buttons should display a visible focus state when users tab to them.
+      
+      - Avoid using <div> or <img> tags to create buttons. Screen readers 
+      don't automatically know either is a usable button.
+      
+      - When styling links to look like buttons, remember that scrreen readers handle 
       links slightly differently than they do buttons. Pressing the Space 
       key triggers a button, but pressing the Enter key triggers a link. 
-      if the <a> elements are used to act as buttons – triggeing in-page 
+      
+      - if the <a> elements are used to act as buttons – triggeing in-page 
       functionality, rather than navigating to another document or section 
       within the current page – they should also be given an appropriate 
       role='button'.
@@ -105,6 +108,6 @@ const ButtonStory = withInfo(
   </div>
 ));
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('Button', ButtonStory);

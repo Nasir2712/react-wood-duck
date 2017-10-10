@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 
 import InputComponent from '../../src/InputComponent';
-import ListItem from '../../src/ListItem';
+import ListItem from '../../src/AddAdditionalItem';
 
 const CenterDecorator = (storyFn) => (
   <div className='container'>
@@ -30,10 +30,12 @@ const clearfix = <div className="clearfix" />;
 const ListItemStory = withInfo(
   `
     #### Usage
+
       - Use when the subset of a form might need to be 
       added multiple times.
 
     #### Accessibility
+      
       - Make sure that the remove link has an arial-label 
       attribute describing what is being removed, example: 
       arial-label="Remove phone number"
@@ -50,6 +52,6 @@ const ListItemStory = withInfo(
   </div>
 ));
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('AddAdditionalItem', ListItemStory);

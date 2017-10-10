@@ -5,14 +5,15 @@ import { withInfo } from '@storybook/addon-info';
 
 import DateTimePicker from '../../src/DateTimePicker';
 
+const styles = { paddingTop: '20px' };
 const CenterDecorator = (storyFn) => (
-  <div className='container' >
+  <div className='container' style={styles} >
     { storyFn() }
   </div>
 );
 
 const DateTimePickerStory = () => (<DateTimePicker />)
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('DateTimePicker', DateTimePickerStory);

@@ -45,6 +45,6 @@ const TableStory = withInfo(
   `
 )(()=> <Table />);
 
-storiesOf('Components', module)
+storiesOf('Prototypes', module)
   .addDecorator(CenterDecorator)
   .add('Table', TableStory);
