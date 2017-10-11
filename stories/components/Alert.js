@@ -44,6 +44,6 @@ const alert = withInfo(
   </div>
 ));
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('Alert', alert);

@@ -77,4 +77,4 @@ const CardsStory = withInfo(
   />
 ));
 
-storiesOf('Prototypes', module).add('Cards', CardsStory);
+storiesOf('In Progress', module).add('Cards', CardsStory);

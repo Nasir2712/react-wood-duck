@@ -14,6 +14,6 @@ const CenterDecorator = (storyFn) => (
 
 const MultiSelectStory = () => <MultiSelect />;
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('MultiSelect', MultiSelectStory);

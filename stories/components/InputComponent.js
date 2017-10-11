@@ -45,6 +45,6 @@ const InputComponentStory = withInfo(
   />
 ));
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('InputComponent', InputComponentStory);

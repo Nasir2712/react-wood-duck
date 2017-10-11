@@ -14,6 +14,6 @@ const CenterDecorator = (storyFn) => (
 
 const DateTimePickerStory = () => (<DateTimePicker />)
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('DateTimePicker', DateTimePickerStory);

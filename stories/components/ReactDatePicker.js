@@ -13,6 +13,6 @@ const CenterDecorator = (storyFn) => (
 );
 const ReactDatePickerStory = () => <ReactDatePicker />;
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('ReactDatePicker', ReactDatePickerStory);

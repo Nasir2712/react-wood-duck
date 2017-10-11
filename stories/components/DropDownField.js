@@ -59,6 +59,6 @@ const DropDownFieldStory = withInfo(
   />
 ));
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('DropDownField', DropDownFieldStory);

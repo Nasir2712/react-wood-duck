@@ -13,9 +13,13 @@ const CenterDecorator = (storyFn) => (
 );
 
 const DatePickerStory = () => (
-  <DatePicker gridClassName='col-md-12 col-sm-12 col-xs-12'/>
+  <DatePicker 
+    gridClassName='col-md-12 col-sm-12 col-xs-12'
+    label="Date"
+    placeholder='mm/dd/yyyy'
+  />
 );
 
-storiesOf('Prototypes', module)
+storiesOf('In Progress', module)
   .addDecorator(CenterDecorator)
   .add('DatePicker', DatePickerStory);
