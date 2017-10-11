@@ -19,7 +19,9 @@ const About = () => (
               collaborative effort between designer and developers on Intake,
               CALS, and Case Managment. It is open source and the repository can
               be found at:{" "}
-              <a href="">https://github.com/ca-cwds/research-design</a>
+              <a href="https://github.com/ca-cwds/research-design">
+                https://github.com/ca-cwds/research-design
+              </a>
             </p>
 
             <p className="lead">Learn more about:</p>
