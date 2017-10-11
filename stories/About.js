@@ -28,7 +28,7 @@ const About = () => (
 
             <ul>
               <li>
-                <a href="https://github.com/ca-cwds/research-design/wiki/pattern-library">
+                <a href="https://github.com/ca-cwds/research-design/wiki">
                   Pattern library vision and goals
                 </a>
               </li>
