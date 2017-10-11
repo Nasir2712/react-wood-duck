@@ -166,3 +166,5 @@ Run your storybook with:
 	yarn run storybook
 
 View your storybook browser http://localhost:6006/
+
+Access storybook here for [react-wood-duck](https://ca-cwds.github.io/react-wood-duck/)
