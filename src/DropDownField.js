@@ -10,7 +10,8 @@ const DropDownField = props => (
         value={props.selectedOption}
         onChange={props.handleOnChange}
         className={props.selectClassName}
-        disabled={props.disable}>
+        disabled={props.disable}
+      >
         <option value="">{props.placeholder}</option>
         {props.options.map(opt => {
           return (

@@ -44,19 +44,7 @@ const ListItemStory = withInfo(
   `
 )(() => (
   <div>
-    <ListItem>
-      <InputComponent
-        label="Name"
-        type="text"
-        gridClassName="col-md-6 col-sm-6 col-xs-12"
-      />
-      <InputComponent
-        label="Phone Number"
-        type="number"
-        gridClassName="col-md-6 col-sm-6 col-xs-12"
-      />
-      <div className="clearfix" />
-    </ListItem>
+    <ListItem>{[inputName, inputPhone, clearfix]}</ListItem>
   </div>
 ));
 

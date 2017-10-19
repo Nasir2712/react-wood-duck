@@ -9,30 +9,54 @@ const cardBody = (
   <div>
     <div className="row">
       <div className="col-md-4">
-        <label htmlFor="firstName">First name</label>
-        <div className="c-gray">John</div>
+        <label htmlFor="firstName">
+          First name
+          <div className="c-gray" name="firstName">
+            John
+          </div>
+        </label>
       </div>
       <div className="col-md-4">
-        <label htmlFor="middleName">Middle name</label>
-        <div className="c-gray">James</div>
+        <label htmlFor="middleName">
+          Middle name
+          <div className="c-gray" name="middleName">
+            James
+          </div>
+        </label>
       </div>
       <div className="col-md-4">
-        <label htmlFor="lastName">Last name</label>
-        <div className="c-gray">Smith</div>
+        <label htmlFor="lastName">
+          Last name
+          <div className="c-gray" name="lastName">
+            Smith
+          </div>
+        </label>
       </div>
     </div>
     <div className="row">
       <div className="col-md-4">
-        <label htmlFor="gender">Gender</label>
-        <div className="c-gray">Male</div>
+        <label htmlFor="gender">
+          Gender
+          <div className="c-gray" name="gender">
+            Male
+          </div>
+        </label>
       </div>
       <div className="col-md-4">
-        <label htmlFor="dateOfBirth">Date of birth</label>
-        <div className="c-gray">02/25/1986</div>
+        <label htmlFor="dateOfBirth">
+          Date of birth
+          <div className="c-gray" name="dateOfBirth">
+            02/25/1986
+          </div>
+        </label>
       </div>
       <div className="col-md-4">
-        <label htmlFor="sss">Social security number</label>
-        <div className="c-gray">158-698-5874</div>
+        <label htmlFor="sss">
+          Social security number
+          <div className="c-gray" name="sss">
+            158-698-5874
+          </div>
+        </label>
       </div>
     </div>
   </div>
@@ -70,6 +94,6 @@ const CardsStory = withInfo(
     
       - Saving the card should keep
   `
-)(() => <Cards cardHeaderText="Profile Information" children={cardBody} />);
+)(() => <Cards cardHeaderText="Profile Information">{cardBody}</Cards>);
 
 storiesOf('In Progress', module).add('Cards', CardsStory);
