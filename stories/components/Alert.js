@@ -38,7 +38,7 @@ const alert = withInfo(
     />
     <Alert
       alertClassName="info"
-      alertMessage="Heads up! This alert needs your attention, but it's not super important.vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;vertical-align: middle;"
+      alertMessage="Heads up! This alert needs your attention, but it's not super important."
       faIcon="fa-info-circle"
     />
     <Alert

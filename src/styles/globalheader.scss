@@ -20,6 +20,9 @@ header {
     text-align: left;
     padding: $medium-spacing 0;
   }
+  a {
+    color: $white;
+  }
   ul.header-actions {
     li {
       list-style: none;

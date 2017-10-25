@@ -19,6 +19,7 @@ $bold-weight: 700;
 $small-font: 0.75rem;
 $base-font: 1.5rem;
 $medium-font: 1.5rem;
+$mediumplus-font: 2rem;
 $large-font: 2.4rem;
 $larger-font: 3rem;
 $largest-font: 4rem;
@@ -26,10 +27,20 @@ $largest-font: 4rem;
 // - Spacing - //
 /////////////////////////////////////////
 $base-spacing: 1.5rem;
+$extra-small-spacing: 0.5rem;
 $small-spacing: 0.75rem;
+$smallplus-spacing: 1rem;
 $medium-spacing: 1.5rem;
+$medium-plus-spacing: 2rem;
 $half-spacing: $base-spacing / 2;
 $double-spacing: $base-spacing * 2;
+
+/////////////////////////////////////////
+// - Width - //
+/////////////////////////////////////////
+$extra-small-width: 0.1rem;
+$small-width: 0.5rem;
+$double-width: 6rem;
 /////////////////////////////////////////
 // - Border Width - //
 /////////////////////////////////////////

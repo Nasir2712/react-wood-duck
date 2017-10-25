@@ -23,7 +23,7 @@ p {
 }
 
 a {
-  color: $white;
+  color: $medium-blue;
 }
 
 a:hover,
@@ -33,6 +33,7 @@ a:active {
 
 a:visited {
   color: $medium-blue;
+  text-decoration: underline;
 }
 
 a:focus {
@@ -81,7 +82,7 @@ pre {
   border: 0;
   border-radius: 0;
   font-family: $code-font-family;
-  font-size: $small-font;
+  font-size: $medium-font;
   margin: 0;
   max-height: 60rem;
 
