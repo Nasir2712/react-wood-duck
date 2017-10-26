@@ -19,6 +19,7 @@ class GlobalHeader extends React.Component {
       isHidden: !this.state.isHidden
     })
   }
+
   _renderToggle () {
     return (
       <ul className='c_dropdown'>
@@ -67,7 +68,7 @@ class GlobalHeader extends React.Component {
                 <li>
                   <p className="profile">
                     {' '}
-                    <a href="#/" onClick={this._handleChange}>{profileName}</a>
+                    <a href="#/" onClick={this._handleChange} onBlur={this._handleChange}>{profileName}</a>
                   </p>
                   {!this.state.isHidden && this._renderToggle()}
                 </li>
