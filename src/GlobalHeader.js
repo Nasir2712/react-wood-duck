@@ -63,9 +63,6 @@ class GlobalHeader extends React.Component {
                   </a>
                 </li>
                 <li>
-                  <span className="divider" />
-                </li>
-                <li>
                   <p className="profile">
                     {' '}
                     <a href="#/" onClick={this._handleChange} onBlur={this._handleChange}>{profileName}</a>
