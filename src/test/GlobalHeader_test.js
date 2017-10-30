@@ -8,7 +8,6 @@ describe('Global Header', function() {
     profileName: 'testProfileName',
     profileAvatar: 'testProfileAvatar',
   };
-  const logoutUrl = 'http://localhost:9876/logout';
   const renderedComponent = TestUtils.createRenderer();
   renderedComponent.render(<GlobalHeader />);
   const resultTag = renderedComponent.getRenderOutput();
@@ -98,17 +97,23 @@ describe('Global Header', function() {
     expect(dElm1.textContent).toEqual('testProfileAvatar');
   });
 
-  it('find element with class, click profile name button and find logout href', function() {
-    let pElm1 = TestUtils.findRenderedDOMComponentWithClass(header, 'profile');
-    let profileNameBtn = pElm1.children[0];
-    TestUtils.Simulate.click(profileNameBtn);
-    let pElm2 = TestUtils.findRenderedDOMComponentWithClass(
-      header,
-      'c_dropdown'
-    );
-    expect(pElm2.className).toBe('c_dropdown');
-    let logoutBtn = pElm2.children[0];
-    TestUtils.Simulate.click(logoutBtn);
-    expect(logoutBtn.children[0].href).toEqual(logoutUrl);
+  describe('#logout', () => {
+    it('allows a logout when clicking profile', function() {
+      const logoutUrl = 'http://localhost:9876/logout';
+      let profileElement = TestUtils.findRenderedDOMComponentWithClass(
+        header,
+        'profile'
+      );
+      let profileNameButton = profileElement.children[0];
+      TestUtils.Simulate.click(profileNameButton);
+      let dropDownElement = TestUtils.findRenderedDOMComponentWithClass(
+        header,
+        'c_dropdown'
+      );
+      expect(dropDownElement.className).toBe('c_dropdown');
+      let logoutButton = dropDownElement.children[0];
+      TestUtils.Simulate.click(logoutButton);
+      expect(logoutButton.children[0].href).toEqual(logoutUrl);
+    });
   });
 });
