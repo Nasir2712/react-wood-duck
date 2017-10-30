@@ -8,7 +8,7 @@ describe('Global Header', function() {
     profileName: 'testProfileName',
     profileAvatar: 'testProfileAvatar',
   };
-  const logoutUrl= 'http://localhost:9876/logout'
+  const logoutUrl = 'http://localhost:9876/logout';
   const renderedComponent = TestUtils.createRenderer();
   renderedComponent.render(<GlobalHeader />);
   const resultTag = renderedComponent.getRenderOutput();
@@ -102,7 +102,10 @@ describe('Global Header', function() {
     let pElm1 = TestUtils.findRenderedDOMComponentWithClass(header, 'profile');
     let profileNameBtn = pElm1.children[0];
     TestUtils.Simulate.click(profileNameBtn);
-    let pElm2 = TestUtils.findRenderedDOMComponentWithClass(header, 'c_dropdown');
+    let pElm2 = TestUtils.findRenderedDOMComponentWithClass(
+      header,
+      'c_dropdown'
+    );
     expect(pElm2.className).toBe('c_dropdown');
     let logoutBtn = pElm2.children[0];
     TestUtils.Simulate.click(logoutBtn);

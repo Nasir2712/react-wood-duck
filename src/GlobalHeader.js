@@ -6,28 +6,28 @@ const defaultAddIcon = () => <i className="fa fa-plus" />;
 const defaultBellIcon = () => <i className="fa fa-bell" />;
 
 class GlobalHeader extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = { 
-      isHidden: true
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHidden: true,
+    };
     this._handleChange = this._handleChange.bind(this);
     this._renderToggle = this._renderToggle.bind(this);
   }
-  _handleChange () {
+  _handleChange() {
     this.setState({
-      isHidden: !this.state.isHidden
-    })
+      isHidden: !this.state.isHidden,
+    });
   }
 
-  _renderToggle () {
+  _renderToggle() {
     return (
-      <ul className='c_dropdown'>
+      <ul className="c_dropdown">
         <li>
           <a href={this.props.logoutUrl}>Logout</a>
         </li>
       </ul>
-    )
+    );
   }
   render() {
     const {
@@ -68,7 +68,13 @@ class GlobalHeader extends React.Component {
                 <li>
                   <p className="profile">
                     {' '}
-                    <a href="#/" onClick={this._handleChange} onBlur={this._handleChange}>{profileName}</a>
+                    <a
+                      href="#/"
+                      onClick={this._handleChange}
+                      onBlur={this._handleChange}
+                    >
+                      {profileName}
+                    </a>
                   </p>
                   {!this.state.isHidden && this._renderToggle()}
                 </li>
